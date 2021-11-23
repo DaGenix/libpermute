@@ -51,7 +51,7 @@ impl PermuteKey for PermuteKeyData {}
 /// by the given `permute_key`.
 ///
 /// `permute_key` can either by a byte slice (`&[u8]` or `&mut [u8]`) or an
-/// instance of [`RandomData`]. As long as this value is unpredictable, the
+/// instance of [`PermuteKeyData`]. As long as this value is unpredictable, the
 /// permutation will also be unpredictable. The same `permute_key` value will
 /// always result in the same permutation.
 ///

@@ -5,7 +5,7 @@ use chacha20::{
 use sha2::{self, digest::FixedOutput, Digest, Sha256};
 
 /// `PermuteKeyData` can be used to incrementally collect data to form a key
-/// to pass to [`permute`](crate::permute).
+/// to pass to [`permute`](crate::permute()).
 #[derive(Debug, Clone)]
 pub struct PermuteKeyData {
     sha: Sha256,
